@@ -17,3 +17,4 @@ dependencies:
       - azureml-core
       - azureml-dataset-runtime[fuse]
       - opencensus-ext-azure
+      - azureml-inference-server-http==1.0.0
