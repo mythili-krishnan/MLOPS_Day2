@@ -2,7 +2,7 @@ name: RegMLopsLitev1
 description: Registry with additional configuration for storage accounts
 tags:
   proc: classical data-science
-location: westus
+location: centralindia
 replication_locations:
   - location: eastus
   - location: eastus2
