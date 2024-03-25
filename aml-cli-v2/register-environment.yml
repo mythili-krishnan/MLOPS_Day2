@@ -23,7 +23,7 @@ steps:
       scriptLocation: inlineScript
       inlineScript: |
         az ml environment create --file ${{ parameters.environment_file }}
-    condition: and(succeeded(), eq('${{ parameters.build_type }}', 'docker'))
+    
 
   - task: AzureCLI@2
     displayName: Register Azure ML environment (conda)
@@ -35,4 +35,4 @@ steps:
       scriptLocation: inlineScript
       inlineScript: |
         az ml environment create --name ${{ parameters.environment_name }} --file ${{ parameters.environment_file }}
-    condition: and(succeeded(), eq('${{ parameters.build_type }}', 'conda'))
+    
