@@ -11,8 +11,8 @@ steps:
       workingDirectory: code/
       inlineScript: |
         set -e # fail on error
-        python -m pip install -U --force-reinstall pip pip install azure-cli==2.35
-        python -m pip install -U --force-reinstall pip pip install azureml-inference-server-http==1.0.0
+        python -m pip install azure-cli==2.35
+        python -m pip install azureml-inference-server-http==1.0.0
         az version
     
     
